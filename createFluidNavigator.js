@@ -43,6 +43,7 @@ export default (routeConfigMap, stackConfig = {}) => {
           transitionConfig={transitionConfig}
           onTransitionStart={onTransitionStart}
           onTransitionEnd={(transition, lastTransition) => {
+            const transitionDestKey = transition.scene.route.key;
             if (transition.navigation.state.isTransitioning) {
               navigation.dispatch(
                 StackActions.completeTransition({
