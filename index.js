@@ -1,7 +1,6 @@
-/** @format */
+import FluidNavigator from './FluidNavigator';
+import createFluidNavigator from './createFluidNavigator';
+import Transition from './TransitionView';
 
-import { AppRegistry } from 'react-native';
-import App from './App';
-import { name as appName } from './app.json';
-
-AppRegistry.registerComponent(appName, () => App);
+export { RouteDirection, Metrics, TransitionSpecification } from './Types';
+export { FluidNavigator, createFluidNavigator, Transition };
