@@ -60,6 +60,5 @@ export default (routeConfigMap, stackConfig = {}) => {
   }
 
   const router = StackRouter(routeConfigMap, stackRouterConfig);
-  const Navigator = createNavigator(FluidNavigationView, router, stackConfig);
-  return createNavigationContainer(Navigator);
+  return createNavigator(FluidNavigationView, router, stackConfig);
 };
